@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "parametric-patterns-eliselockwood",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5502
+	}
+}
