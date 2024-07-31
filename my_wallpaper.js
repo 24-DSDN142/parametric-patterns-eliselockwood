@@ -1,34 +1,31 @@
 //your parameter variables go here!
-  let xval = 100 // was 115
-  let yval = 100 
-  var eyeY = 62 //was 62 changes position on y axis where circle sits
-  var eyeSize = 5// was 5 changes size of eye circle
-  var eyewidth = 5 // 5 changes width of eye circle 
-  let detailcolour = 100 //was 200 - this changes the eye colour and the buttom colour i.e 100 is black, 200 is light grey in low opacity. 
-  var linewidth = 10 // was 100 - changes right snowman arm width & opacity 
-  let tophat = true; //change top hat to disappear 
+let xval = 97 // was 97
+let yval = 97 // changes the position of the buttons (97 is the best y position value for middle button)
+var eyeY = 62 // was 62 changes position on y axis where circle sits
+var eyeSize = 5// was 5 changes size of eye circle
+var eyewidth = 5 // 5 changes width of eye circle 
+let detailcolour = 20 //was 200 - this changes the eye colour and the buttom colour i.e 100 is black, 200 is light grey in low opacity. 
+var linewidth = 100 // was 100 - changes right snowman arm width & opacity 
+let tophat = true; //change top hat to disappear 
+let size = 5 // parameterized control over size of buttons
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
-  pWallpaper.show_guide(false); //set this to false when you're ready to print
+pWallpaper.output_mode(GLIDE_WALLPAPER);
+pWallpaper.resolution(NINE_LANDSCAPE);
+pWallpaper.show_guide(false); //set this to false when you're ready to print
 
-  //Grid settings
-  pWallpaper.grid_settings.cell_width  = 200;
-  pWallpaper.grid_settings.cell_height = 200;
-  pWallpaper.grid_settings.row_offset  = 180;
+//Grid settings
+pWallpaper.grid_settings.cell_width  = 80;
+pWallpaper.grid_settings.cell_height = 200;
+pWallpaper.grid_settings.row_offset  = 20;
 }
 
 function wallpaper_background() {
-  background(17, 100, 90, ); //background colour RGB 
+background(900, 900, 900,); //background colour RGB 
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-//var x = 100;
-//var x ellipseY = 150; 
-let xval = 100 // changes buttons placement 
-let yval = 100 
-/// dark grey - 10
+
 
     stroke (10) //outline of snowman in a dark grey
     circle (100,150,80,20) //circle at the bottom of the snowman
@@ -46,9 +43,9 @@ let yval = 100
     ellipse(105, eyeY, eyewidth, eyeSize) //right eye
   
     //snowman buttons
-    ellipse (xval, 90, 5, 5) //top button
-    ellipse (xval, 97, 5, 5) //second button
-    ellipse (xval, 104, 5, 5) //third button
+    ellipse (xval, yval - 7, 5, 5) //top button
+    ellipse (xval, yval, 5, 5) //second button
+    ellipse (xval, yval + 7, 5, 5) //third button
     fill(200)
 
     stroke (linewidth) //outline of snowman in a dark grey
