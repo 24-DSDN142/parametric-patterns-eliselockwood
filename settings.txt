@@ -10,23 +10,29 @@ Your final settings.txt will look something like this when you are finished:
 Wallpaper 1:
 
 //your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
+let xval = 97 // was 97
+let yval = 97 // changes the position of the buttons (97 is the best y position value for middle button)
+var eyeY = 62 // was 62 changes position on y axis where circle sits
+var eyeSize = 12// was 5 changes size of eye circle
+var eyewidth = 5 // 5 changes width of eye circle 
+let detailcolour = 100 //was 200 - this changes the eye colour and the buttom colour i.e 100 is black, 200 is light grey in low opacity. 
+var linewidth = 10 // was 100 - changes right snowman arm width & opacity 
+let tophat = true; //change top hat to disappear 
+let size = 5 // parameterized control over size of buttons
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
-  pWallpaper.show_guide(false); //set this to false when you're ready to print
+pWallpaper.output_mode(GRID_WALLPAPER);
+pWallpaper.resolution(NINE_PORTRAIT);
+pWallpaper.show_guide(false); //set this to false when you're ready to print
 
-  //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 50;
+//Grid settings
+pWallpaper.grid_settings.cell_width  = 200;
+pWallpaper.grid_settings.cell_height = 100;
+pWallpaper.grid_settings.row_offset  = 10;
+}
+
+function wallpaper_background() {
+background(97, 97, 100,); //background colour RGB 
 }
 
 /////////////////////////////////
@@ -34,21 +40,237 @@ function setup_wallpaper(pWallpaper) {
 Wallpaper 2:
 
 //your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+let xval = 97 // was 97
+let yval = 5 // changes the position of the buttons (97 is the best y position value for middle button)
+var eyeY = 60 // was 62 changes position on y axis where circle sits
+var eyeSize = 5// was 5 changes size of eye circle
+var eyewidth = 5 // 5 changes width of eye circle 
+let detailcolour = 200 //was 200 - this changes the eye colour and the buttom colour i.e 100 is black, 200 is light grey in low opacity. 
+var linewidth = 100 // was 100 - changes right snowman arm width & opacity 
+let tophat = false; //change top hat to disappear 
+let size = 5 // parameterized control over size of buttons
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
-  pWallpaper.show_guide(false); //set this to false when you're ready to print
+pWallpaper.output_mode(GRID_WALLPAPER);
+pWallpaper.resolution(NINE_LANDSCAPE);
+pWallpaper.show_guide(false); //set this to false when you're ready to print
 
-  //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 0;
+//Grid settings
+pWallpaper.grid_settings.cell_width  = 200;
+pWallpaper.grid_settings.cell_height = 100;
+pWallpaper.grid_settings.row_offset  = 10;
+}
+
+function wallpaper_background() {
+background(7, 100, 97,); //background colour RGB 
+}
+
+/////////////////////////////////
+
+Wallpaper 3:
+
+//your parameter variables go here!
+let xval = 97 // was 97
+let yval = 97 // changes the position of the buttons (97 is the best y position value for middle button)
+var eyeY = 62 // was 62 changes position on y axis where circle sits
+var eyeSize = 5// was 5 changes size of eye circle
+var eyewidth = 5 // 5 changes width of eye circle 
+let detailcolour = 2 //was 200 - this changes the eye colour and the buttom colour i.e 100 is black, 200 is light grey in low opacity. 
+var linewidth = 10 // was 100 - changes right snowman arm width & opacity 
+let tophat = false; //change top hat to disappear 
+let size = 5 // parameterized control over size of buttons
+
+function setup_wallpaper(pWallpaper) {
+pWallpaper.output_mode(GLIDE_WALLPAPER);
+pWallpaper.resolution(NINE_LANDSCAPE);
+pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+//Grid settings
+pWallpaper.grid_settings.cell_width  = 200;
+pWallpaper.grid_settings.cell_height = 100;
+pWallpaper.grid_settings.row_offset  = 29;
+}
+
+function wallpaper_background() {
+background(12, 7, 200,); //background colour RGB 
+}
+
+/////////////////////////////////
+
+Wallpaper 4:
+
+//your parameter variables go here!
+let xval = 90 // was 97
+let yval = 97 // changes the position of the buttons (97 is the best y position value for middle button)
+var eyeY = 62 // was 62 changes position on y axis where circle sits
+var eyeSize = 5// was 5 changes size of eye circle
+var eyewidth = 5 // 5 changes width of eye circle 
+let detailcolour = 2 //was 200 - this changes the eye colour and the buttom colour i.e 100 is black, 200 is light grey in low opacity. 
+var linewidth = 10 // was 100 - changes right snowman arm width & opacity 
+let tophat = false; //change top hat to disappear 
+let size = 5 // parameterized control over size of buttons
+
+function setup_wallpaper(pWallpaper) {
+pWallpaper.output_mode(GLIDE_WALLPAPER);
+pWallpaper.resolution(NINE_LANDSCAPE);
+pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+//Grid settings
+pWallpaper.grid_settings.cell_width  = 70;
+pWallpaper.grid_settings.cell_height = 100;
+pWallpaper.grid_settings.row_offset  = 70;
+}
+
+function wallpaper_background() {
+background(97, 97, 97,); //background colour RGB 
+}
+
+/////////////////////////////////
+
+Wallpaper 5:
+
+//your parameter variables go here!
+let xval = 90 // was 97
+let yval = 97 // changes the position of the buttons (97 is the best y position value for middle button)
+var eyeY = 60 // was 62 changes position on y axis where circle sits
+var eyeSize = 5// was 5 changes size of eye circle
+var eyewidth = 5 // 5 changes width of eye circle 
+let detailcolour = 2 //was 200 - this changes the eye colour and the buttom colour i.e 100 is black, 200 is light grey in low opacity. 
+var linewidth = 10 // was 100 - changes right snowman arm width & opacity 
+let tophat = true; //change top hat to disappear 
+let size = 5 // parameterized control over size of buttons
+
+function setup_wallpaper(pWallpaper) {
+pWallpaper.output_mode(GLIDE_WALLPAPER);
+pWallpaper.resolution(NINE_PORTRAIT);
+pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+//Grid settings
+pWallpaper.grid_settings.cell_width  = 200;
+pWallpaper.grid_settings.cell_height = 200;
+pWallpaper.grid_settings.row_offset  = 100;
+}
+
+function wallpaper_background() {
+background(10, 70, 99,); //background colour RGB 
+}
+
+/////////////////////////////////
+
+Wallpaper 6: 
+
+//your parameter variables go here!
+let xval = 180 // was 97
+let yval = 120 // changes the position of the buttons (97 is the best y position value for middle button)
+var eyeY = 62 // was 62 changes position on y axis where circle sits
+var eyeSize = 20// was 5 changes size of eye circle
+var eyewidth = 10 // 5 changes width of eye circle 
+let detailcolour = 2 //was 200 - this changes the eye colour and the buttom colour i.e 100 is black, 200 is light grey in low opacity. 
+var linewidth = 10 // was 100 - changes right snowman arm width & opacity 
+let tophat = true; //change top hat to disappear 
+let size = 5 // parameterized control over size of buttons
+
+function setup_wallpaper(pWallpaper) {
+pWallpaper.output_mode(GLIDE_WALLPAPER);
+pWallpaper.resolution(NINE_PORTRAIT);
+pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+//Grid settings
+pWallpaper.grid_settings.cell_width  = 200;
+pWallpaper.grid_settings.cell_height = 200;
+pWallpaper.grid_settings.row_offset  = 100;
+}
+
+function wallpaper_background() {
+background(100, 70, 40,); //background colour RGB 
+}
+
+/////////////////////////////////
+
+Wallpaper 7:
+
+//your parameter variables go here!
+let xval = 190 // was 97
+let yval = 180 // changes the position of the buttons (97 is the best y position value for middle button)
+var eyeY = 62 // was 62 changes position on y axis where circle sits
+var eyeSize = 5// was 5 changes size of eye circle
+var eyewidth = 5 // 5 changes width of eye circle 
+let detailcolour = 2 //was 200 - this changes the eye colour and the buttom colour i.e 100 is black, 200 is light grey in low opacity. 
+var linewidth = 10 // was 100 - changes right snowman arm width & opacity 
+let tophat = true; //change top hat to disappear 
+let size = 5 // parameterized control over size of buttons
+
+function setup_wallpaper(pWallpaper) {
+pWallpaper.output_mode(GRID_WALLPAPER);
+pWallpaper.resolution(NINE_LANDSCAPE);
+pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+//Grid settings
+pWallpaper.grid_settings.cell_width  = 200;
+pWallpaper.grid_settings.cell_height = 200;
+pWallpaper.grid_settings.row_offset  = 10;
+}
+
+function wallpaper_background() {
+background(97, 90, 90,); //background colour RGB 
+}
+
+/////////////////////////////////
+
+Wallpaper 8:
+
+//your parameter variables go here!
+let xval = 97 // was 97
+let yval = 97 // changes the position of the buttons (97 is the best y position value for middle button)
+var eyeY = 62 // was 62 changes position on y axis where circle sits
+var eyeSize = 5// was 5 changes size of eye circle
+var eyewidth = 5 // 5 changes width of eye circle 
+let detailcolour = 20 //was 200 - this changes the eye colour and the buttom colour i.e 100 is black, 200 is light grey in low opacity. 
+var linewidth = 100 // was 100 - changes right snowman arm width & opacity 
+let tophat = true; //change top hat to disappear 
+let size = 15 // parameterized control over size of buttons
+
+function setup_wallpaper(pWallpaper) {
+pWallpaper.output_mode(GRID_WALLPAPER);
+pWallpaper.resolution(NINE_PORTRAIT);
+pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+//Grid settings
+pWallpaper.grid_settings.cell_width  = 800;
+pWallpaper.grid_settings.cell_height = 200;
+pWallpaper.grid_settings.row_offset  = 20;
+}
+
+function wallpaper_background() {
+background(107, 7, 100,); //background colour RGB 
+}
+
+/////////////////////////////////
+
+Wallpaper 9:
+
+//your parameter variables go here!
+let xval = 97 // was 97
+let yval = 97 // changes the position of the buttons (97 is the best y position value for middle button)
+var eyeY = 62 // was 62 changes position on y axis where circle sits
+var eyeSize = 5// was 5 changes size of eye circle
+var eyewidth = 5 // 5 changes width of eye circle 
+let detailcolour = 20 //was 200 - this changes the eye colour and the buttom colour i.e 100 is black, 200 is light grey in low opacity. 
+var linewidth = 100 // was 100 - changes right snowman arm width & opacity 
+let tophat = true; //change top hat to disappear 
+let size = 5 // parameterized control over size of buttons
+
+function setup_wallpaper(pWallpaper) {
+pWallpaper.output_mode(GLIDE_WALLPAPER);
+pWallpaper.resolution(NINE_LANDSCAPE);
+pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+//Grid settings
+pWallpaper.grid_settings.cell_width  = 80;
+pWallpaper.grid_settings.cell_height = 200;
+pWallpaper.grid_settings.row_offset  = 20;
+}
+
+function wallpaper_background() {
+background(900, 900, 900,); //background colour RGB 
 }
